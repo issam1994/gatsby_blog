@@ -1,0 +1,30 @@
+.tag{
+    @apply px-3 py-1 m-1 font-semibold rounded bg-gray-500 text-white;
+}
+.javascript {
+    @apply bg-yellow-500 text-gray-800;
+}
+.react {
+    @apply bg-gray-800 text-blue-400;
+}
+.vue {
+    @apply bg-green-600 text-white;
+}
+.nuxt {
+    @apply bg-green-500 text-gray-800;
+}
+.css {
+    @apply bg-blue-600 text-white;
+}
+.html {
+    @apply bg-orange-600 text-white;
+}
+.node {
+    @apply bg-green-600 text-gray-800;
+}
+.express {
+    @apply bg-gray-700 text-white;
+}
+.database {
+    @apply bg-green-500 text-white;
+}

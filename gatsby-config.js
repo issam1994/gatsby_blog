@@ -9,11 +9,13 @@ module.exports = {
     `gatsby-plugin-postcss`,
     //
     `gatsby-plugin-react-helmet`,
+    //to parse markdown
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-sharp`,
