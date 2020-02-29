@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../layouts/layout'
-import SEO from '../layouts/seo'
+import Layout from './layout'
+import SEO from './seo'
 import SideBar from '../components/sidebar/SideBar'
 
 export default function blogTemplate({ title, children }) {

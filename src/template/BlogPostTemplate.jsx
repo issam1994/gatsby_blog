@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import PostLayout from './PostLayout'
+import PostLayout from '../layouts/BlogPostLayout'
 
 export const query = graphql`
 query ($slug: String!) {
@@ -17,7 +17,7 @@ export default function blogTemplate(props) {
   const { id, html, frontmatter: { title, date } } = props.data.markdownRemark
   return (
     <PostLayout title={title} key={id}>
-      <div className="flex-1 px-4 pt-4">
+      <div className="flex-1 px-8 pt-4">
         <div className="text-4xl font-bold tracking-wide">{title}</div>
         <div className="text-sm font-light mt-6 opacity-50">Published on {date}</div>
         <hr className="border-indigo-700 mb-6 opacity-50" />

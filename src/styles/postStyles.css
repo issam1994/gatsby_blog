@@ -8,9 +8,6 @@
 .post-html  p {
     @apply my-4;
 }
-.post-html pre {
-    @apply bg-gray-300 px-3 py-1 rounded-md;
-}
 .post-html li {
     @apply italic pl-4 pb-1;
 }

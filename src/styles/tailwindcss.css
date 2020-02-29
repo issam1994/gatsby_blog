@@ -8,7 +8,16 @@
 * {
     font-family: 'Montserrat', 'sans serif'
 }
-/* extending tailwind */
+/* lets make font-size responsive */
+html {
+        font-size: 12px
+    }
+@screen md {
+    html {
+        font-size: 16px
+    }
+}
+/* extending tailwindcss */
 @responsive {
     .flex-center {
         @apply flex justify-center items-center;

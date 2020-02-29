@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, graphql, useStaticQuery} from 'gatsby'
-import tagStyles from './tags.module.css'
+import './tags.css'
 
 export default function Tags() {
     const data = useStaticQuery(graphql`
@@ -36,7 +36,7 @@ export default function Tags() {
     return (
         <div className="flex flex-wrap">
             {tags.map((name, i) => (
-                <Link to={`/tag/${name}`} key={name} className={`${tagStyles.tag} ${tagStyles[name]}`}>
+                <Link to={`/tag/${name}`} key={name} className={`tag ${name}`}>
                     {name}
                 </Link>
             ))}
@@ -44,13 +44,13 @@ export default function Tags() {
     )
 }
 
-const tagsData = [
-        {name: 'javascript'},
-        {name: 'react'},
-        {name: 'vue'},
-        {name: 'css'},
-        {name: 'html'},
-        {name: 'node'},
-        {name: 'express'},
-        {name: 'database'},
-    ]
+// const tagsData = [
+//         {name: 'javascript'},
+//         {name: 'react'},
+//         {name: 'vue'},
+//         {name: 'css'},
+//         {name: 'html'},
+//         {name: 'node'},
+//         {name: 'express'},
+//         {name: 'database'},
+//     ]
