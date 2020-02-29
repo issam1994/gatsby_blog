@@ -7,6 +7,9 @@
 .react {
     @apply bg-gray-800 text-blue-400;
 }
+.gatsby {
+    @apply bg-indigo-800 text-white;
+}
 .vue {
     @apply bg-green-600 text-white;
 }

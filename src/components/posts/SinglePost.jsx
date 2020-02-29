@@ -13,7 +13,7 @@ export default function SinglePost({ post }) {
                 <div className="absolute inset-0 flex items-end">
                     {/* tags */}
                     <div className="absolute flex top-0 right-0">
-                        {tags.split(",").map(t => <div className={'tag ' + t}>{t}</div>)}
+                        {tags.split(",").map(t => <div key={t} className={'tag ' + t}>{t}</div>)}
                     </div>
                     {/* end tags */}
                     {/* date  */}

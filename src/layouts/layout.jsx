@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  
   return (
     <div className="min-h-screen w-full text-gray-800">
       <Header siteTitle={data.site.siteMetadata.title} />
