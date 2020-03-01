@@ -1,7 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../components/header"
+import Footer from "../components/Footer"
+// import Header from "../components/header"
+
 //global styles
 import '../styles/tailwindcss.css'
 
@@ -18,14 +20,11 @@ const Layout = ({ children }) => {
   
   return (
     <div className="min-h-screen w-full text-gray-800">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main className="container mx-auto p-2 flex flex-wrap flex-col md:flex-row">
+      {/* <Header /> */}
+      <main className=" max-w-screen-xl mx-auto p-2 flex flex-wrap flex-col md:flex-row">
         {children}
       </main>
-      <hr className="mt-4 max-w-5xl mx-auto" />
-      <footer className="text-center my-4">
-          © {new Date().getFullYear()}, Built By Issam Ait Ouahmane
-        </footer>
+      <Footer />
     </div>
   )
 }

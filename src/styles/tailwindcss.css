@@ -10,7 +10,7 @@
 }
 /* lets make font-size responsive */
 html {
-        font-size: 12px
+        font-size: 15px
     }
 @screen md {
     html {

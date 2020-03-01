@@ -10,12 +10,12 @@ const Header = () => {
 
   return (
     <header className="shadow bg-white">
-      <div className="container mx-auto px-2 flex">
+      <div className=" max-w-screen-xl mx-auto px-2 flex">
         {/* logo */}
         <Logo />
         <div className="ml-auto"></div>
-        {/* nav links disabled */}
-        {false && pages.map(p => (
+        {/* nav links */}
+        {pages.map(p => (
           <Link
           activeClassName="active-link"
           className="nav-link"

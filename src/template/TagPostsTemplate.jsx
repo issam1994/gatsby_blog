@@ -28,13 +28,13 @@ query ($filter: String!) {
   }
   }
 `
-export default function TagTemplate({data, pathContext}) {
-  const {edges} = data.allMarkdownRemark
+export default function TagTemplate({ data, pathContext }) {
+  const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-    <SEO title={pathContext.tag} />
-      <SideBar />
+      <SEO title={pathContext.tag} />
+      <SideBar showGoHome/>
       <Posts posts={edges} />
-  </Layout>
+    </Layout>
   )
 }

@@ -4,14 +4,17 @@ module.exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions
     //to create slug fields
     if (node.internal.type === 'MarkdownRemark') {
-        const slug = path.basename(node.fileAbsolutePath, '.md')
-        createNodeField({
-            node,
-            name: 'slug',
-            value: slug
-        })
+        const createSlugFields = () => {
+            const slug = path.basename(node.fileAbsolutePath, '.md')
+            createNodeField({
+                node,
+                name: 'slug',
+                value: slug
+            })
+        }
+        createSlugFields();
     }
-    
+
 
 }
 module.exports.createPages = async ({ graphql, actions }) => {
@@ -47,7 +50,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     // to create a page for each tag's posts
     const createTagsPages = async () => {
         const { createPage } = actions
-        const TagTemplate = path.resolve('./src/template/TagTemplate.jsx')
+        const TagPostsTemplate = path.resolve('./src/template/TagPostsTemplate.jsx')
         const res = await graphql(`
     query {
         allMarkdownRemark {
@@ -79,7 +82,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         // create a page per tag
         tags.forEach(tag => {
             createPage({
-                component: TagTemplate,
+                component: TagPostsTemplate,
                 path: `/tag/${tag}`,
                 context: {
                     filter: `/${tag}/`,

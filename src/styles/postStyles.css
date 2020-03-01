@@ -1,15 +1,20 @@
 /* post inner html styles*/
 .post-html  h1 {
-    @apply font-semibold text-3xl;
+    @apply font-semibold text-3xl mt-2;
 }
 .post-html  h2 {
-    @apply font-semibold text-2xl;
+    @apply font-semibold text-2xl mt-2;
 }
 .post-html  p {
-    @apply my-4;
+    @apply mb-4;
 }
 .post-html li {
-    @apply italic pl-4 pb-1;
+    @apply pl-4;
+}
+.post-html li::before {
+    @apply mr-2 text-xl not-italic;
+    /* content : "👉"; */
+    content : "✅";
 }
 .post-html blockquote {
     @apply bg-gray-200 font-thin border-l-4 border-indigo-700 italic p-2 mx-2 rounded;
