@@ -6,13 +6,11 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
       './src/**/*.jsx',
       // etc.
     ],
-  
     // Include any special characters you're using in this regular expression
     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
   })
   
 module.exports = () => {
-    console.log("current environment!!!",process.env.NODE_ENV)
     return ({
         plugins: [
             require("tailwindcss"),

@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .tag{
     @apply px-3 py-1 m-1 font-semibold rounded bg-gray-500 text-white;
 }
@@ -31,3 +32,4 @@
 .database {
     @apply bg-green-500 text-white;
 }
+/* purgecss end ignore */

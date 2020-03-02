@@ -5,6 +5,8 @@ import SEO from '../layouts/seo'
 import SideBar from '../components/sidebar/SideBar'
 import FullPost from '../components/posts/FullPost'
 
+import '../styles/prismTheme.css'
+
 export const query = graphql`
 query ($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {

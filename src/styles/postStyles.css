@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 /* post inner html styles*/
 .post-html  h1 {
     @apply font-semibold text-4xl mt-4;
@@ -22,4 +23,4 @@
 .post-html blockquote > p{
     @apply m-0;
 }
-/*markdown html styles*/
+/* purgecss start ignore */
