@@ -1,9 +1,9 @@
 /* post inner html styles*/
 .post-html  h1 {
-    @apply font-semibold text-3xl mt-2;
+    @apply font-semibold text-4xl mt-4;
 }
 .post-html  h2 {
-    @apply font-semibold text-2xl mt-2;
+    @apply font-semibold text-2xl mt-4;
 }
 .post-html  p {
     @apply mb-4;
@@ -17,8 +17,9 @@
     content : "✅";
 }
 .post-html blockquote {
-    @apply bg-gray-200 font-thin border-l-4 border-indigo-700 italic p-2 mx-2 rounded;
+    @apply bg-indigo-100 border-l-4 border-indigo-500 p-2 mb-2;
 }
 .post-html blockquote > p{
     @apply m-0;
 }
+/*markdown html styles*/

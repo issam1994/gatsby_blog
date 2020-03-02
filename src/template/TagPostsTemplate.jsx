@@ -7,8 +7,6 @@ import SEO from "../layouts/seo"
 import Posts from "../components/posts/PostsList"
 import SideBar from "../components/sidebar/SideBar"
 
-import '../styles/postStyles.css'
-
 export const query = graphql`
 query ($filter: String!) {
   allMarkdownRemark(filter: {frontmatter: {tags: {regex: $filter}}}) {

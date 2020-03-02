@@ -4,14 +4,14 @@ import { Link } from 'gatsby'
 
 const EmailMe = () => (
     <div className="my-4">
-        <span className="mx-1">✉️ Questions?</span>
+        <span className="mx-1"><span role="img">✉️</span> Questions?</span>
         <a className="mx-1 text-indigo-700 font-semibold text-sm" href="mailto:issamaitouahmane@gmail.com">Email me!</a>
     </div>
 )
 
 const GoHome = () => (
     <div className="my-4 text-indigo-700 font-semibold">
-        <Link to="/" className="">🏠 Go Home !</Link>
+        <Link to="/" className=""><span role="img">🏠</span> Go Home !</Link>
     </div>
 )
 

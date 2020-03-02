@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
-    description: `The Great Gatsby Blog!`,
-    author: `@issam1994`,
+    title: `IssamDev Blog`,
+    description: `Issam Ait Ouahmane's Gatsby Blog! for Programming tutorials`,
+    author: `Issam Ait Ouahmane`,
   },
   plugins: [
     //postcss for tailwindcss
